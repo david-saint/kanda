@@ -33294,6 +33294,7 @@ module.exports = __webpack_require__(189);
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(10);
+
 __webpack_require__(144);
 
 /***/ }),
@@ -33328,16 +33329,14 @@ module.exports = g;
 /***/ (function(module, exports, __webpack_require__) {
 
 var M = __webpack_require__(10);
+
 var Chart = __webpack_require__(145);
 
-var totalProfit = document.getElementById('totalProfit').getContext('2d');
-
-// document.getElementById('totalProfit').style.background = 'linear-gradient(208.81deg, #35B2F9 -0.02%, rgba(53, 178, 249, 0.69) 83.34%, rgba(53, 178, 249, 0.2) 129.92%)';
+var totalProfit = document.getElementById('totalProfit').getContext('2d'); // document.getElementById('totalProfit').style.background = 'linear-gradient(208.81deg, #35B2F9 -0.02%, rgba(53, 178, 249, 0.69) 83.34%, rgba(53, 178, 249, 0.2) 129.92%)';
 
 var whiteGradient = totalProfit.createLinearGradient(0, 0, 0, 180);
 whiteGradient.addColorStop(0, 'rgba(189, 95, 190, 0.33)');
 whiteGradient.addColorStop(1, 'rgba(189, 95, 190, 0.33)');
-
 var totalChart = new Chart(totalProfit, {
   type: 'line',
   data: {
@@ -33394,7 +33393,6 @@ var totalChart = new Chart(totalProfit, {
     }
   }
 });
-
 document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.modal');
   var instances = M.Modal.init(elems, {});

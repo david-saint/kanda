@@ -1,0 +1,22 @@
+{
+  "name": "kanda",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:david-saint/kanda.git",
+  "author": "David Saint <topstronics@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "laravel-mix": "^3.0.0",
+    "webpack-livereload-plugin": "1"
+  },
+  "dependencies": {
+    "chart.js": "^2.7.3",
+    "materialize-css": "^1.0.0"
+  }
+}

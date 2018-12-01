@@ -2119,11 +2119,11 @@
 }
 
 .primary.lighter {
-  background-color: rgba(189, 95, 190, 0.33) !important;
+  background-color: #BD5FBE !important;
 }
 
 .primary-text.text-lighter {
-  color: rgba(189, 95, 190, 0.33) !important;
+  color: #BD5FBE !important;
 }
 
 .secondary {
@@ -2131,6 +2131,14 @@
 }
 
 .secondary-text {
+  color: #BD5FBE !important;
+}
+
+.secondary.lighter {
+  background-color: #BD5FBE !important;
+}
+
+.secondary-text.text-lighter {
   color: #BD5FBE !important;
 }
 
@@ -10797,9 +10805,300 @@ nav .nav--signup {
   font-size: 13px;
 }
 
+.account .top {
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account .top .dets p {
+  font-size: 20.4262px;
+  letter-spacing: 0.7px;
+  color: #25252F;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.account .top .dets p.sub {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.account .top .dets span {
+  font-size: 15px;
+  letter-spacing: 0.7px;
+  color: #8F8BAB;
+  font-weight: 400;
+}
+
+.account .body {
+  margin: 25px 0;
+}
+
+.account .body ul li {
+  padding: 10px 0;
+}
+
+.account .body ul li a {
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  color: #25252F;
+}
+
+.account .body ul li a:hover {
+  color: #BD5FBE;
+  text-decoration: underline;
+}
+
 .elevated {
   -webkit-box-shadow: -4.40551px 4.40551px 22.0276px rgba(37, 37, 47, 0.1) !important;
           box-shadow: -4.40551px 4.40551px 22.0276px rgba(37, 37, 47, 0.1) !important;
   border-radius: 3.30413px;
+}
+
+@media only screen and (max-width: 992px) {
+  #login {
+    overflow: auto;
+  }
+
+  #login nav {
+    display: none;
+  }
+
+  #login .box {
+    padding: 15px;
+    width: 100vw;
+    min-height: 100vh;
+  }
+
+  #login .box h5 {
+    margin: 10px 0;
+    text-align: left;
+    font-weight: 600;
+    width: 220px;
+    line-height: 38px;
+  }
+
+  #login .box .logo {
+    margin: 25px 0;
+  }
+
+  .content {
+    position: relative;
+  }
+
+  .content .left-nav {
+    position: fixed;
+    bottom: 15px;
+    width: calc(100% - 30px);
+    height: 64px;
+    margin: 15px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px -4px 20px rgba(38, 38, 38, 0.16);
+            box-shadow: 0px -4px 20px rgba(38, 38, 38, 0.16);
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .content .left-nav .top {
+    display: none;
+  }
+
+  .content .left-nav .links {
+    width: 100%;
+    margin: 0 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .content .left-nav .links .links--item {
+    position: relative;
+    margin: 0 !important;
+  }
+
+  .content .left-nav .links .links--item svg {
+    margin: 0 10px !important;
+  }
+
+  .content .left-nav .links .links--item img {
+    margin: 0 10px !important;
+  }
+
+  .content .left-nav .links .links--item a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    opacity: 0;
+  }
+
+  .content main {
+    width: 100vw;
+  }
+
+  .content main header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px 15px;
+  }
+
+  .content main header h5 {
+    line-height: normal;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #25252F;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .content main section {
+    padding: 20px 15px !important;
+  }
+
+  .content main .cards {
+    padding: 0 15px !important;
+  }
+
+  .content main .cards h3 {
+    font-size: 14px;
+  }
+
+  .content main .cards #cards-carousel {
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    -webkit-box-shadow: -4.40551px 4.40551px 22.0276px rgba(37, 37, 47, 0.1) !important;
+            box-shadow: -4.40551px 4.40551px 22.0276px rgba(37, 37, 47, 0.1) !important;
+    border-radius: 3.30413px;
+  }
+
+  .content main .cards #cards-carousel .carousel-item {
+    width: 100%;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+
+  .content main .currencies {
+    width: 100%;
+    overflow-x: auto;
+    padding: 0 15px !important;
+    margin: 20px 0;
+  }
+
+  .content main .currencies ul li {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin-right: 10px;
+  }
+
+  .content main .graph {
+    padding: 10px 15px !important;
+  }
+
+  .content main .graph .top .stats .nb {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+  }
+
+  .content main .graph .top .stats .lb span.l,
+  .content main .graph .top .stats .lb span.d {
+    font-size: 12px;
+    letter-spacing: .5px;
+  }
+
+  .content main .offers table thead tr td {
+    padding: 15px;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+  }
+
+  .content main .offers table tbody tr td {
+    padding: 15px;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+  }
+
+  .content main .offers table tbody tr td a {
+    font-size: 11px;
+  }
+
+  .content main .inbox {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .content main .inbox .inbox--list {
+    width: 100%;
+  }
+
+  .content main .inbox .inbox--view {
+    width: 100%;
+    margin: 0 !important;
+  }
+
+  .content main .wallets .wallet .wallet--action {
+    min-height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .content main .wallets .wallet .wallet--action button,
+  .content main .wallets .wallet .wallet--action a {
+    margin: 0;
+    margin-right: 10px;
+  }
 }
 

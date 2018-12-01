@@ -806,7 +806,211 @@ nav {
   }
 }
 
+.account {
+  .top {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    .dets {
+      p {
+        font-size: 20.4262px;
+        letter-spacing: 0.7px;
+        color: #25252F;
+        font-weight: 600;
+        margin: 5px 0;
+        &.sub {
+          font-weight: 500;
+          font-size: 15px;
+        }
+      }
+      span {
+        font-size: 15px;
+        letter-spacing: 0.7px;
+        color: #8F8BAB;
+        font-weight: 400;
+      }
+    }
+  }
+  .body {
+    margin: 25px 0;
+    ul {
+      li {
+        padding: 10px 0;
+        a {
+          font-size: 14px;
+          letter-spacing: 0.7px;
+          color: #25252F;
+          &:hover {
+            color: $primary-color;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
 .elevated {
   box-shadow: -4.40551px 4.40551px 22.0276px rgba(37, 37, 47, 0.1) !important;
   border-radius: 3.30413px;
+}
+
+@media #{$medium-and-down} {
+  #login {
+    overflow: auto;
+    nav {display: none;}
+    .box {
+      padding: 15px;
+      width: 100vw;
+      min-height: 100vh;
+      h5 {
+        margin: 10px 0;
+        text-align: left;
+        font-weight: 600;
+        width: 220px;
+        line-height: 38px;
+      }
+      .logo { margin: 25px 0;}
+    }
+  }
+  .content {
+    position: relative;
+    .left-nav {
+      position: fixed;
+      bottom: 15px;
+      width: calc(100% - 30px);
+      height: 64px;
+      margin: 15px;
+      background-color: #fff;
+      box-shadow: 0px -4px 20px rgba(38, 38, 38, 0.16);
+      border-radius: 10px;
+      padding: 10px;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .top {
+        display: none;
+      }
+      .links {
+        width: 100%;
+        margin: 0 !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .links--item {
+          position: relative;
+          margin: 0 !important;
+          svg {margin: 0 10px !important;}
+          img {margin: 0 10px !important;}
+          a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: transparent;
+            opacity: 0;
+          }
+        }
+      }
+    }
+    main {
+      width: 100vw;
+      header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 15px;
+        h5 {
+          line-height: normal;
+          font-size: 18px;
+          text-align: center;
+          letter-spacing: 0.5px;
+          color: #25252F;
+          font-weight: 600;
+          margin: 0;
+        }
+      }
+      section {
+        padding: 20px 15px !important;
+      }
+      .cards {
+        padding: 0 15px !important;
+        h3 { font-size: 14px;}
+        #cards-carousel {
+          width: 100%;
+          height: auto;
+          overflow-x: auto;
+          box-shadow: -4.40551px 4.40551px 22.0276px rgba(37, 37, 47, 0.1) !important;
+          border-radius: 3.30413px;
+          .carousel-item {
+            width: 100%;
+            flex-shrink: 0;
+          }
+        }
+      }
+      .currencies {
+        width: 100%;
+        overflow-x: auto;
+        padding: 0 15px !important;
+        margin: 20px 0;
+        ul {
+          li {flex-shrink: 0; margin-right: 10px;}
+        }
+      }
+      .graph {
+        padding: 10px 15px !important;
+        .top {
+          .stats {
+            .nb {font-size: 10px; letter-spacing: 0.5px;}
+            .lb {span.l, span.d {font-size: 12px; letter-spacing: .5px;}}
+          }
+        }
+      }
+      .offers {
+        table {
+          thead {
+            tr {
+              td {
+                padding: 15px;
+                font-size: 10px;
+                letter-spacing: 0.5px;
+                font-weight: 600;
+              }
+            }
+          }
+          tbody {
+            tr {
+              td {
+                padding: 15px;
+                font-size: 11px;
+                letter-spacing: 0.5px;
+                a {font-size: 11px;}
+              }
+            }
+          }
+        }
+      }
+      .inbox {
+        flex-wrap: wrap;
+        .inbox--list {width: 100%;}
+        .inbox--view {width: 100%; margin: 0 !important;}
+      }
+      .wallets {
+        .wallet {
+          .wallet--action {
+            min-height: auto;
+            flex-direction: row;
+            button, a { margin: 0; margin-right: 10px;}
+          }
+        }
+      }
+    }
+  }
 }
